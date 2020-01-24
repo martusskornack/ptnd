@@ -1,0 +1,525 @@
+/*----------------------------------------------------------------------------------------
+* Author        : Ambidextrousbd
+* Template Name : Korprate - One Page Corporate Html5 Template
+* File          : Korprate main CSS file
+* Version       : 1.0
+* ---------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* INDEX
+----------------------------------------------------------------------------------------
+
+01. General css
+
+02. Navigation area css
+
+03. Slider area css
+
+04. Hero area css
+
+05. About us area css
+
+06. working process area css
+
+07. Work area css
+
+08. Team area css
+
+09. Testimonial area css
+
+10. Client area css
+
+11. Price area css
+
+12. News area css
+
+13. Subscribe area css
+
+14. Google map  and contact area css
+
+15. Footer area css
+
+-------------------------------------------------------------------------------------- */
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,600|Roboto');
+
+
+/* ----------------------------------------------------------------------------------------
+*                                       01. General css
+* -------------------------------------------------------------------------------------- */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+body {
+    color: #777;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #0f1d44;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+}
+
+h2 {
+    font-size: 36px;
+    color: #0f1d44;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+h5 {
+    letter-spacing: 2px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+p {
+    letter-spacing: 0px;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+.section-big {
+    padding: 140px 0px;
+}
+
+@media (max-width: 767px) {
+    .section-big {
+        padding: 80px 0px;
+    }
+}
+
+.section-small {
+    padding: 50px 0px;
+}
+
+.section-title {
+    margin: auto;
+    max-width: 600px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.contact-title:before,
+.section-title:before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 40px;
+    top: -77%;
+    background-color: #0f1d44;
+}
+
+.news .contact-title:before {
+    top: -140%;
+}
+
+.section-title h2 {
+    margin-top: 0;
+    line-height: 38px;
+}
+
+
+
+/* preloader css */
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background-image: url(../img/preloader.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+@media (max-width: 479px) {
+    .section-title:before {
+        top: -50%;
+    }
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                               02. Navigation area css
+* --------------------------------------------------------------------------------------- */
+.menu-area {
+    height: 100px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    position:absolute;
+    align-items: center;
+    width:auto;
+
+}
+
+
+.menu-area.sticky-menu {
+    background: #fff;
+   
+
+}
+
+.sticky-menu {
+    box-shadow: 0px 20px 50px 0px rgba(153, 153, 153, 0.1);
+}
+
+.mainmenu {
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    
+}
+.name { 
+    align-items: center;
+}
+.navbar {
+    margin-bottom: 0;
+    border: 0px;
+    padding-top: 20px;
+}
+
+
+
+.nav.navbar-nav.navbar-right {
+    margin-right: 0;
+}
+
+.navbar-brand .name{
+    padding-right: 15px;
+    
+}
+.navbar-brand {
+    padding: 0;
+    color: #777;
+    display: flex;
+font-size: 15px;
+
+
+}
+
+
+
+.navbar-brand span {
+    color: #0f1d44
+}
+
+.navbar-brand:hover {
+    color: #777;
+}
+#logo{
+    margin-left:20px;
+}
+
+.navbar-nav li a {
+    color: #0f1d44;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-nav a.btn,
+.navbar-nav a.btn:focus {
+    color: #000;
+    font-size: 14px;
+    padding: 10px 25px;
+    margin-left: 20px;
+    background: lightgray;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+
+@media (min-width: 1200px) {
+
+    .navbar-nav a.btn,
+    .navbar-nav a.btn:focus {
+        margin-left: 130px;
+    }
+}
+
+.navbar-nav a.btn:hover {
+    color: lightgray;
+    background: rgb(92, 193, 247);
+    border-radius: 6px;
+    background: -moz-linear-gradient(45deg, rgba(92, 193, 247, 1) 0%, rgba(90, 191, 245, 1) 1%, rgba(93, 189, 247, 1) 2%, rgba(91, 190, 245, 1) 2%, rgba(93, 189, 247, 1) 2%, rgba(94, 189, 247, 1) 3%, rgba(92, 187, 245, 1) 4%, rgba(93, 187, 248, 1) 4%, rgba(96, 179, 245, 1) 8%, rgba(98, 175, 247, 1) 12%, rgba(99, 171, 245, 1) 13%, rgba(99, 173, 248, 1) 13%, rgba(99, 171, 245, 1) 13%, rgba(101, 170, 247, 1) 14%, rgba(102, 165, 245, 1) 17%, rgba(107, 149, 247, 1) 24%, rgba(110, 148, 247, 1) 25%, rgba(108, 146, 247, 1) 26%, rgba(111, 146, 248, 1) 26%, rgba(109, 144, 246, 1) 26%, rgba(112, 143, 249, 1) 27%, rgba(110, 141, 247, 1) 28%, rgba(114, 138, 248, 1) 29%, rgba(113, 133, 246, 1) 31%, rgba(116, 133, 247, 1) 31%, rgba(114, 131, 247, 1) 32%, rgba(117, 129, 247, 1) 32%, rgba(117, 126, 247, 1) 35%, rgba(120, 119, 246, 1) 36%, rgba(121, 120, 248, 1) 37%, rgba(119, 118, 246, 1) 37%, rgba(120, 117, 246, 1) 38%, rgba(122, 116, 248, 1) 38%, rgba(121, 114, 246, 1) 39%, rgba(124, 112, 248, 1) 40%, rgba(123, 109, 246, 1) 41%, rgba(127, 106, 247, 1) 43%, rgba(126, 101, 245, 1) 44%, rgba(127, 102, 248, 1) 45%, rgba(127, 99, 246, 1) 45%, rgba(130, 97, 248, 1) 46%, rgba(129, 92, 247, 1) 48%, rgba(132, 93, 248, 1) 48%, rgba(131, 90, 246, 1) 49%, rgba(134, 88, 248, 1) 50%, rgba(132, 86, 246, 1) 51%, rgba(138, 76, 247, 1) 55%, rgba(136, 77, 247, 1) 55%, rgba(139, 75, 247, 1) 55%, rgba(137, 73, 247, 1) 56%, rgba(140, 73, 248, 1) 56%, rgba(139, 69, 246, 1) 58%, rgba(141, 67, 248, 1) 59%, rgba(140, 67, 245, 1) 59%, rgba(141, 67, 248, 1) 59%, rgba(142, 60, 246, 1) 62%, rgba(145, 61, 247, 1) 62%, rgba(145, 56, 246, 1) 64%, rgba(146, 56, 249, 1) 64%, rgba(145, 56, 246, 1) 64%, rgba(146, 54, 249, 1) 65%, rgba(154, 33, 248, 1) 74%, rgba(163, 10, 248, 1) 89%, rgba(166, 7, 249, 1) 93%, rgba(165, 6, 248, 1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(92, 193, 247, 1) 0%, rgba(90, 191, 245, 1) 1%, rgba(93, 189, 247, 1) 2%, rgba(91, 190, 245, 1) 2%, rgba(93, 189, 247, 1) 2%, rgba(94, 189, 247, 1) 3%, rgba(92, 187, 245, 1) 4%, rgba(93, 187, 248, 1) 4%, rgba(96, 179, 245, 1) 8%, rgba(98, 175, 247, 1) 12%, rgba(99, 171, 245, 1) 13%, rgba(99, 173, 248, 1) 13%, rgba(99, 171, 245, 1) 13%, rgba(101, 170, 247, 1) 14%, rgba(102, 165, 245, 1) 17%, rgba(107, 149, 247, 1) 24%, rgba(110, 148, 247, 1) 25%, rgba(108, 146, 247, 1) 26%, rgba(111, 146, 248, 1) 26%, rgba(109, 144, 246, 1) 26%, rgba(112, 143, 249, 1) 27%, rgba(110, 141, 247, 1) 28%, rgba(114, 138, 248, 1) 29%, rgba(113, 133, 246, 1) 31%, rgba(116, 133, 247, 1) 31%, rgba(114, 131, 247, 1) 32%, rgba(117, 129, 247, 1) 32%, rgba(117, 126, 247, 1) 35%, rgba(120, 119, 246, 1) 36%, rgba(121, 120, 248, 1) 37%, rgba(119, 118, 246, 1) 37%, rgba(120, 117, 246, 1) 38%, rgba(122, 116, 248, 1) 38%, rgba(121, 114, 246, 1) 39%, rgba(124, 112, 248, 1) 40%, rgba(123, 109, 246, 1) 41%, rgba(127, 106, 247, 1) 43%, rgba(126, 101, 245, 1) 44%, rgba(127, 102, 248, 1) 45%, rgba(127, 99, 246, 1) 45%, rgba(130, 97, 248, 1) 46%, rgba(129, 92, 247, 1) 48%, rgba(132, 93, 248, 1) 48%, rgba(131, 90, 246, 1) 49%, rgba(134, 88, 248, 1) 50%, rgba(132, 86, 246, 1) 51%, rgba(138, 76, 247, 1) 55%, rgba(136, 77, 247, 1) 55%, rgba(139, 75, 247, 1) 55%, rgba(137, 73, 247, 1) 56%, rgba(140, 73, 248, 1) 56%, rgba(139, 69, 246, 1) 58%, rgba(141, 67, 248, 1) 59%, rgba(140, 67, 245, 1) 59%, rgba(141, 67, 248, 1) 59%, rgba(142, 60, 246, 1) 62%, rgba(145, 61, 247, 1) 62%, rgba(145, 56, 246, 1) 64%, rgba(146, 56, 249, 1) 64%, rgba(145, 56, 246, 1) 64%, rgba(146, 54, 249, 1) 65%, rgba(154, 33, 248, 1) 74%, rgba(163, 10, 248, 1) 89%, rgba(166, 7, 249, 1) 93%, rgba(165, 6, 248, 1) 100%);
+    background: linear-gradient(45deg, rgba(92, 193, 247, 1) 0%, rgba(90, 191, 245, 1) 1%, rgba(93, 189, 247, 1) 2%, rgba(91, 190, 245, 1) 2%, rgba(93, 189, 247, 1) 2%, rgba(94, 189, 247, 1) 3%, rgba(92, 187, 245, 1) 4%, rgba(93, 187, 248, 1) 4%, rgba(96, 179, 245, 1) 8%, rgba(98, 175, 247, 1) 12%, rgba(99, 171, 245, 1) 13%, rgba(99, 173, 248, 1) 13%, rgba(99, 171, 245, 1) 13%, rgba(101, 170, 247, 1) 14%, rgba(102, 165, 245, 1) 17%, rgba(107, 149, 247, 1) 24%, rgba(110, 148, 247, 1) 25%, rgba(108, 146, 247, 1) 26%, rgba(111, 146, 248, 1) 26%, rgba(109, 144, 246, 1) 26%, rgba(112, 143, 249, 1) 27%, rgba(110, 141, 247, 1) 28%, rgba(114, 138, 248, 1) 29%, rgba(113, 133, 246, 1) 31%, rgba(116, 133, 247, 1) 31%, rgba(114, 131, 247, 1) 32%, rgba(117, 129, 247, 1) 32%, rgba(117, 126, 247, 1) 35%, rgba(120, 119, 246, 1) 36%, rgba(121, 120, 248, 1) 37%, rgba(119, 118, 246, 1) 37%, rgba(120, 117, 246, 1) 38%, rgba(122, 116, 248, 1) 38%, rgba(121, 114, 246, 1) 39%, rgba(124, 112, 248, 1) 40%, rgba(123, 109, 246, 1) 41%, rgba(127, 106, 247, 1) 43%, rgba(126, 101, 245, 1) 44%, rgba(127, 102, 248, 1) 45%, rgba(127, 99, 246, 1) 45%, rgba(130, 97, 248, 1) 46%, rgba(129, 92, 247, 1) 48%, rgba(132, 93, 248, 1) 48%, rgba(131, 90, 246, 1) 49%, rgba(134, 88, 248, 1) 50%, rgba(132, 86, 246, 1) 51%, rgba(138, 76, 247, 1) 55%, rgba(136, 77, 247, 1) 55%, rgba(139, 75, 247, 1) 55%, rgba(137, 73, 247, 1) 56%, rgba(140, 73, 248, 1) 56%, rgba(139, 69, 246, 1) 58%, rgba(141, 67, 248, 1) 59%, rgba(140, 67, 245, 1) 59%, rgba(141, 67, 248, 1) 59%, rgba(142, 60, 246, 1) 62%, rgba(145, 61, 247, 1) 62%, rgba(145, 56, 246, 1) 64%, rgba(146, 56, 249, 1) 64%, rgba(145, 56, 246, 1) 64%, rgba(146, 54, 249, 1) 65%, rgba(154, 33, 248, 1) 74%, rgba(163, 10, 248, 1) 89%, rgba(166, 7, 249, 1) 93%, rgba(165, 6, 248, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cc1f7', endColorstr='#a506f8', GradientType=1);
+}
+
+
+.nav>li>a:hover,
+.nav>li>a:active,
+.nav>li>a:focus {
+    background: none;
+
+}
+
+.mainmenu .navbar-nav li.active a {
+    color: lightgray;
+}
+
+/* Mobile Nav css */
+.navbar-toggle .icon-bar  {
+    border: 1px solid black;
+}
+
+
+@media (max-width: 991px) {
+    .navbar-nav li a {
+        padding: 10px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu-area {
+        display: block;
+    }
+
+    .navbar-fixed-top .navbar-collapse {
+     
+        margin-top: 25px;
+        margin: 0 -15px;
+    
+        
+    }
+
+    .mainmenu .navbar-nav li.active a {
+        color: #eee;
+    }
+
+    .navbar-nav li a {
+        color: #0f1d44;
+        padding-left: 30px;
+    }
+
+    .navbar-toggle {
+        margin-top: 20px;
+    }
+
+    .navbar-brand {
+        padding-top: 25px;
+    }
+}
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                               03. Slider area css
+* -------------------------------------------------------------------------------------- */
+
+.slider-area {
+    height: 70%;
+    background-image: url("../../img/kids.jpg");
+    background-color: #FFFF;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    display: flex;
+    align-items: center;
+  
+}
+
+.slider-area:before {
+    position: absolute;
+    content: "";
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+  
+}
+
+.news .slider-area {
+    height: 30%;
+ 
+}
+
+.news #news {
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+.intro-text {
+    max-width: 512px;
+  
+}
+
+.intro-text h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.video {
+    margin-top: 30px;
+    position: relative;
+}
+
+.intro-text a {
+    float: left;
+    margin-right: 20px;
+}
+
+.video i.fa,
+.video span {
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    font-size: 21px;
+    text-align: center;
+    color: black;
+    background-color: rgba(153, 153, 153, 0.2);
+    text-shadow: 0px 10px 15px rgba(255, 101, 165, 0.3);
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   15. Footer area css
+* --------------------------------------------------------------------------------------- */
+.footer-area {
+    background-image: url(../../img/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 80px;
+    margin-top: 45px;
+}
+
+.footer-title:before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 40px;
+    top: -77%;
+    background-color: #0f1d44;
+}
+
+.footer-title h2 {
+    color: #fff;
+}
+
+.footer-social {
+    padding-top: 30px;
+}
+
+.footer-social a span {
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #3c4766;
+    margin-right: 10px;
+}
+
+
+.footer-area p {
+    padding-top: 50px;
+}
+
+.footer-area p a {
+    color: #0f1d44;
+
+}
+
+@media (max-width: 991px) {
+    .footer-title:before {
+        top: -70px;
+    }
+}
+
+@media (max-width: 479px) {
+    .footer-title:before {
+        top: -67px;
+    }
+
+    .footer-title {
+        margin-top: 70px;
+    }
+}
